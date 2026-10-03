@@ -14,6 +14,9 @@ export const products = raw as Product[];
 
 export const categories = Array.from(new Set(products.map((p) => p.category)));
 
+// Public address of the live site. Override with NEXT_PUBLIC_SITE_URL when you add a custom domain.
+export const SITE_URL = (process.env.NEXT_PUBLIC_SITE_URL ?? "https://friendscrackers.vercel.app").replace(/\/$/, "");
+
 export const SITE = {
   name: "Friends Crackers",
   tamil: "பட்டாசு கடை",

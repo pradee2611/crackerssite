@@ -8,9 +8,8 @@ import { CartProvider } from "@/components/CartProvider";
 import Header from "@/components/Header";
 import CartDrawer from "@/components/CartDrawer";
 import Footer from "@/components/Footer";
-import { SITE } from "@/lib/site";
+import { SITE, SITE_URL } from "@/lib/site";
 
-const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000";
 const TITLE = "Friends Crackers – Sivakasi Crackers in Coimbatore | 2026 Diwali Pre-order";
 const DESC =
   "Friends Crackers (MK Groups), Perinayakampalayam, Coimbatore. 85 Sivakasi crackers and combo offers at pre-order prices. Wholesale & retail, bulk orders, delivery available. Order on WhatsApp.";

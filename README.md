@@ -15,7 +15,7 @@ npm run build && npm start
 - WhatsApp number / phones / address / notice: `lib/site.ts`
   (or set `NEXT_PUBLIC_WHATSAPP=91XXXXXXXXXX` in `.env.local`)
 - Price list files: `public/price-list.pdf` and `public/price-list-mobile.pdf`
-- Set `NEXT_PUBLIC_SITE_URL=https://your-domain` for correct share previews.
+- The live address defaults to `https://friendscrackers.vercel.app` (see `SITE_URL` in `lib/site.ts`). When you add a custom domain, set `NEXT_PUBLIC_SITE_URL=https://your-domain` so SEO links and share previews use it.
 
 ## Deploy
 Push to GitHub and import in Vercel (zero config), or run `npm run build && npm start` on any Node 18+ server.
