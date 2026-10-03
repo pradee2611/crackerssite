@@ -1,4 +1,5 @@
 import raw from "@/data/products.json";
+import comboData from "@/data/combos.json";
 
 export type Product = {
   id: number;
@@ -30,6 +31,10 @@ export const SITE = {
   notice:
     "Pre-order prices for 2026. Prices in the shop may vary and packing charges may be added.",
 };
+
+export type Combo = { title: string; price: number; free: string; items: { name: string; qty: string; price: number }[] };
+export const combos = comboData.combos as Combo[];
+export const giftBoxes = comboData.giftBoxes as number[];
 
 export const inr = (n: number) => "₹" + n.toLocaleString("en-IN");
 

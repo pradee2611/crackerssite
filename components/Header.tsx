@@ -18,6 +18,7 @@ export default function Header() {
         </Link>
         <nav className="nav" aria-label="Main">
           <Link href="/#shop">Shop</Link>
+          <Link href="/#combos">Combos</Link>
           <Link href="/price-list">Price list</Link>
           <Link href="/#offers">Offers</Link>
           <Link href="/#contact">Contact</Link>

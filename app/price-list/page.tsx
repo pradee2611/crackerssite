@@ -18,7 +18,7 @@ export default function PriceList() {
         <a className="btn ghost" href="/price-list-mobile.pdf" download>Download PDF (mobile)</a>
       </div>
       <div className="pages">
-        {Array.from({ length: 8 }, (_, i) => (
+        {Array.from({ length: 9 }, (_, i) => (
           <Image
             key={i}
             src={`/gallery/page-${i + 1}.jpg`}

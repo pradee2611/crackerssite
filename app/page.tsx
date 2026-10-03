@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import Catalogue from "@/components/Catalogue";
+import Combos from "@/components/Combos";
 import { products, categories, SITE } from "@/lib/site";
 
 export default function Home() {
@@ -20,6 +21,7 @@ export default function Home() {
             </p>
             <div className="cta">
               <Link className="btn" href="/#shop">Shop now</Link>
+              <Link className="btn ghost" href="/#combos">Combo offers</Link>
               <a className="btn ghost" href="/price-list.pdf" target="_blank" rel="noopener noreferrer">Download price list</a>
             </div>
             <ul className="trust">
@@ -35,6 +37,8 @@ export default function Home() {
       </section>
 
       <Catalogue />
+
+      <Combos />
 
 
       <section className="section wrap how">

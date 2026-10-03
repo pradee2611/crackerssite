@@ -121,6 +121,31 @@ a { color: inherit; }
 .total { display: flex; justify-content: space-between; font-size: 18px; }
 .drawer-foot .btn { text-align: center; }
 
+/* combos + gift box */
+.combos { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; align-items: start; }
+.combo { background: #fff; border: 3px solid #e2b23a; border-radius: 16px; overflow: hidden; box-shadow: 0 8px 18px rgba(94,0,9,.18); }
+.combo-top { background: linear-gradient(var(--red-2), var(--deep)); color: #fff; text-align: center; padding: 16px 12px; display: flex; flex-direction: column; align-items: center; gap: 4px; }
+.combo-top h3 { margin: 0; letter-spacing: 2px; font-size: 18px; }
+.combo-price { font-size: clamp(32px, 6vw, 44px); color: var(--gold); line-height: 1.1; }
+.combo-free { background: var(--gold); color: var(--red); font-weight: 700; padding: 4px 16px; border-radius: 999px; font-size: 14px; }
+.combo-items { list-style: none; margin: 0; padding: 0; }
+.combo-items li { display: grid; grid-template-columns: 26px 1fr auto auto; gap: 8px; align-items: baseline; padding: 6px 12px; font-size: 14px; border-bottom: 1px solid #f3e4b4; }
+.combo-items li:nth-child(odd) { background: #fff8e6; }
+.combo-items .ci { color: #a0700a; font-size: 12px; }
+.combo-items .cn { font-weight: 600; color: var(--deep); }
+.combo-items .cq { font-size: 12px; color: #a0700a; }
+.combo-items .cv { font-weight: 700; min-width: 48px; text-align: right; }
+.combo-foot { display: flex; justify-content: space-between; align-items: center; gap: 10px; flex-wrap: wrap; padding: 12px; background: linear-gradient(#fff4b8, var(--gold)); color: var(--red); font-weight: 700; font-size: 13px; }
+.gift { margin-top: 24px; text-align: center; border: 3px dashed var(--gold-2); border-radius: 16px; padding: 16px; background: var(--deep); color: #fff; }
+.gift h3 { margin: 0 0 12px; color: var(--gold); font-size: clamp(18px, 4vw, 24px); }
+.gift ul { list-style: none; margin: 0 0 12px; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(110px, 1fr)); gap: 12px; }
+.gift li { background: linear-gradient(#fff4b8, var(--gold) 45%, var(--gold-2)); color: var(--red); border-radius: 12px; padding: 10px; display: flex; flex-direction: column; line-height: 1.1; }
+.gift li b { font-size: 34px; }
+.gift li span { font-weight: 700; font-size: 13px; }
+.gift li small { font-size: 12px; }
+.gift p { margin: 0; font-size: 14px; }
+.gift a { color: var(--gold); }
+
 @media (max-width: 900px) {
   .hero-row { grid-template-columns: 1fr; gap: 24px; }
   .hero { padding: 28px 0 36px; }
