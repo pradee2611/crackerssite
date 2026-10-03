@@ -3,12 +3,19 @@ import "@fontsource/poppins/400.css";
 import "@fontsource/poppins/500.css";
 import "@fontsource/poppins/600.css";
 import "@fontsource/poppins/700.css";
+import "@fontsource/noto-sans-tamil/400.css";
+import "@fontsource/noto-sans-tamil/600.css";
+import "@fontsource/noto-sans-tamil/700.css";
+import "@fontsource/noto-sans-malayalam/400.css";
+import "@fontsource/noto-sans-malayalam/600.css";
+import "@fontsource/noto-sans-malayalam/700.css";
 import "./globals.css";
 import { CartProvider } from "@/components/CartProvider";
+import { LangProvider } from "@/components/LangProvider";
 import Header from "@/components/Header";
 import CartDrawer from "@/components/CartDrawer";
 import Footer from "@/components/Footer";
-import { SITE, SITE_URL } from "@/lib/site";
+import { LOCATION, SITE, SITE_URL } from "@/lib/site";
 
 const TITLE = "Friends Crackers – Sivakasi Crackers in Coimbatore | 2026 Diwali Pre-order";
 const DESC =
@@ -71,7 +78,10 @@ const jsonLd = {
     addressRegion: "Tamil Nadu",
     addressCountry: "IN",
   },
+  geo: { "@type": "GeoCoordinates", latitude: LOCATION.lat, longitude: LOCATION.lng },
+  hasMap: LOCATION.view,
   areaServed: "Coimbatore",
+  availableLanguage: ["English", "Tamil", "Malayalam"],
   priceRange: "₹",
 };
 
@@ -80,12 +90,14 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="en">
       <body>
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
-        <CartProvider>
-          <Header />
-          <main>{children}</main>
-          <Footer />
-          <CartDrawer />
-        </CartProvider>
+        <LangProvider>
+          <CartProvider>
+            <Header />
+            <main>{children}</main>
+            <Footer />
+            <CartDrawer />
+          </CartProvider>
+        </LangProvider>
       </body>
     </html>
   );

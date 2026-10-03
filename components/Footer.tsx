@@ -1,13 +1,14 @@
-import { SITE, waLink } from "@/lib/site";
+import { SITE, LOCATION, waLink } from "@/lib/site";
+import { T } from "./LangProvider";
 
 export default function Footer() {
   return (
     <>
       <section id="contact" className="contact">
         <div className="wrap contact-row">
-          <div>
-            <h2>Visit or call us</h2>
-            <p className="addr">📍 {SITE.address}</p>
+          <div className="contact-info">
+            <h2><T k="contact.title" /></h2>
+            <p className="addr">📍 <T k="contact.address" /></p>
             <ul className="phones">
               {SITE.phones.map((p) => (
                 <li key={p.number}>
@@ -18,16 +19,30 @@ export default function Footer() {
                 </li>
               ))}
             </ul>
+            <div className="cta">
+              <a className="btn wa" href={waLink("Hi Friends Crackers, I have a question.")} target="_blank" rel="noopener noreferrer">
+                <T k="contact.chat" />
+              </a>
+              <a className="btn" href={LOCATION.directions} target="_blank" rel="noopener noreferrer">
+                📍 <T k="contact.directions" />
+              </a>
+            </div>
           </div>
-          <a className="btn wa big" href={waLink("Hi Friends Crackers, I have a question.")} target="_blank" rel="noopener noreferrer">
-            Chat on WhatsApp
-          </a>
+          <div className="map">
+            <iframe
+              src={LOCATION.embed}
+              title="Friends Crackers location map"
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              allowFullScreen
+            />
+          </div>
         </div>
       </section>
       <footer className="footer">
         <div className="wrap">
-          <p>© 2026 {SITE.name} · A unit of {SITE.group} · {SITE.notice}</p>
-          <p className="safe">Please buy and use crackers responsibly, follow local rules and timings, and keep children supervised.</p>
+          <p><T k="footer.copy" vars={{ name: SITE.name, group: SITE.group }} /> · <T k="notice" /></p>
+          <p className="safe"><T k="footer.safe" /></p>
         </div>
       </footer>
     </>

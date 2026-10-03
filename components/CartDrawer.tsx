@@ -1,11 +1,13 @@
 "use client";
 
 import Image from "next/image";
-import { inr, products, SITE, waLink } from "@/lib/site";
+import { inr, products, waLink } from "@/lib/site";
 import { useCart } from "./CartProvider";
+import { useLang } from "./LangProvider";
 
 export default function CartDrawer() {
   const { cart, total, count, open, setOpen, setQty, clear } = useCart();
+  const { t, name: tr } = useLang();
   const lines = Object.entries(cart)
     .map(([id, qty]) => ({ p: products.find((x) => x.id === Number(id))!, qty }))
     .filter((l) => l.p);
@@ -31,26 +33,26 @@ export default function CartDrawer() {
       <div className={`scrim ${open ? "show" : ""}`} onClick={() => setOpen(false)} />
       <aside className={`drawer ${open ? "open" : ""}`} aria-hidden={!open} aria-label="Cart">
         <div className="drawer-head">
-          <h2>Your order ({count})</h2>
-          <button onClick={() => setOpen(false)} aria-label="Close cart">✕</button>
+          <h2>{t("cart.title", { n: count })}</h2>
+          <button onClick={() => setOpen(false)} aria-label={t("cart.close")}>✕</button>
         </div>
 
         {lines.length === 0 ? (
-          <p className="empty">Your cart is empty. Add crackers from the shop and send your order on WhatsApp.</p>
+          <p className="empty">{t("cart.empty")}</p>
         ) : (
           <ul className="lines">
             {lines.map(({ p, qty }) => (
               <li key={p.id}>
                 <Image src={p.image} alt="" width={56} height={56} />
                 <div className="ln-info">
-                  <b>{p.name}</b>
-                  {p.variant && <small>{p.variant}</small>}
-                  <span>{inr(p.price)} each</span>
+                  <b>{tr(p.name)}</b>
+                  {p.variant && <small>{tr(p.variant)}</small>}
+                  <span>{t("cart.each", { p: inr(p.price) })}</span>
                 </div>
                 <div className="qty">
-                  <button onClick={() => setQty(p.id, qty - 1)} aria-label="Decrease">−</button>
+                  <button onClick={() => setQty(p.id, qty - 1)} aria-label={t("qty.dec")}>−</button>
                   <span>{qty}</span>
-                  <button onClick={() => setQty(p.id, qty + 1)} aria-label="Increase">+</button>
+                  <button onClick={() => setQty(p.id, qty + 1)} aria-label={t("qty.inc")}>+</button>
                 </div>
                 <b className="ln-total">{inr(p.price * qty)}</b>
               </li>
@@ -59,18 +61,18 @@ export default function CartDrawer() {
         )}
 
         <div className="drawer-foot">
-          <div className="total"><span>Total</span><b>{inr(total)}</b></div>
-          <p className="note">{SITE.notice}</p>
+          <div className="total"><span>{t("cart.total")}</span><b>{inr(total)}</b></div>
+          <p className="note">{t("notice")}</p>
           <a
             className={`btn wa ${lines.length === 0 ? "disabled" : ""}`}
             href={lines.length ? waLink(message()) : undefined}
             target="_blank"
             rel="noopener noreferrer"
           >
-            Send order on WhatsApp
+            {t("cart.send")}
           </a>
           {lines.length > 0 && (
-            <button className="link" onClick={clear}>Clear cart</button>
+            <button className="link" onClick={clear}>{t("cart.clear")}</button>
           )}
         </div>
       </aside>

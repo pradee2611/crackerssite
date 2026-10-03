@@ -17,6 +17,14 @@ export const categories = Array.from(new Set(products.map((p) => p.category)));
 // Public address of the live site. Override with NEXT_PUBLIC_SITE_URL when you add a custom domain.
 export const SITE_URL = (process.env.NEXT_PUBLIC_SITE_URL ?? "https://friendscrackers.vercel.app").replace(/\/$/, "");
 
+export const LOCATION = {
+  lat: 11.1553421,
+  lng: 76.9444809,
+  embed: "https://maps.google.com/maps?q=11.1553421,76.9444809&z=16&output=embed",
+  directions: "https://www.google.com/maps/dir/?api=1&destination=11.1553421,76.9444809",
+  view: "https://www.google.com/maps/search/?api=1&query=11.1553421,76.9444809",
+};
+
 export const SITE = {
   name: "Friends Crackers",
   tamil: "பட்டாசு கடை",

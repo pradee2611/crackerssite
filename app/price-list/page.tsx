@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Image from "next/image";
-import { SITE } from "@/lib/site";
+import { T } from "@/components/LangProvider";
 
 export const metadata: Metadata = {
   title: "2026 Crackers Price List",
@@ -11,11 +11,11 @@ export const metadata: Metadata = {
 export default function PriceList() {
   return (
     <section className="section wrap">
-      <h1 className="title"><span>2026 price list</span></h1>
-      <p className="note center">{SITE.notice}</p>
+      <h1 className="title"><span><T k="price.title" /></span></h1>
+      <p className="note center"><T k="notice" /></p>
       <div className="cta center">
-        <a className="btn" href="/price-list.pdf" download>Download PDF (print quality)</a>
-        <a className="btn ghost" href="/price-list-mobile.pdf" download>Download PDF (mobile)</a>
+        <a className="btn" href="/price-list.pdf" download><T k="price.print" /></a>
+        <a className="btn ghost" href="/price-list-mobile.pdf" download><T k="price.mobile" /></a>
       </div>
       <div className="pages">
         {Array.from({ length: 9 }, (_, i) => (
