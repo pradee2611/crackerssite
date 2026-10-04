@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import { useMemo, useState } from "react";
-import { categories, familyOrder, inr, products, type Product } from "@/lib/site";
+import { categories, DISCOUNT, familyOrder, inr, mrp, products, type Product } from "@/lib/site";
 import { useCart } from "./CartProvider";
 import { useLang } from "./LangProvider";
 
@@ -89,12 +89,16 @@ export default function Catalogue() {
                     priority={gi === 0 && i < 4}
                   />
                   <span className="no">#{p.id}</span>
+                  <span className="off">{t("shop.off", { n: DISCOUNT })}</span>
                 </div>
                 <div className="info">
                   <h3>{tr(p.name)}</h3>
                   {p.variant && <span className="variant">{tr(p.variant)}</span>}
                   <div className="buy">
-                    <b className="price">{inr(p.price)}</b>
+                    <span className="prices">
+                      <s className="mrp">{inr(mrp(p.price))}</s>
+                      <b className="price">{inr(p.price)}</b>
+                    </span>
                     {qty === 0 ? (
                       <button className="btn sm" onClick={() => add(p.id)}>{t("shop.add")}</button>
                     ) : (

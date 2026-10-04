@@ -82,6 +82,9 @@ a { color: inherit; }
 .info h3 { margin: 0; font-size: 16px; color: var(--deep); line-height: 1.25; }
 .variant { font-size: 13px; color: #a0700a; font-weight: 600; }
 .buy { display: flex; align-items: center; justify-content: space-between; margin-top: auto; padding-top: 10px; }
+.off { position: absolute; top: 8px; right: 8px; background: linear-gradient(180deg, #fff4b8, var(--gold) 45%, var(--gold-2)); color: var(--red); font-size: 11px; font-weight: 700; padding: 4px 8px; border-radius: 999px; border: 1px solid #fff; white-space: nowrap; }
+.prices { display: flex; flex-direction: column; align-items: flex-start; line-height: 1.1; gap: 3px; }
+.mrp { color: #6b4a4a; font-size: 13px; font-weight: 600; text-decoration-color: var(--red-2); text-decoration-thickness: 2px; }
 .price { background: linear-gradient(var(--red-2), var(--red)); color: #ffe27a; font-size: 19px; padding: 3px 11px; border-radius: 8px; }
 .qty { display: inline-flex; align-items: center; border: 2px solid var(--gold-2); border-radius: 999px; overflow: hidden; }
 .qty button { width: 30px; height: 30px; border: 0; background: var(--gold); color: var(--red); font-weight: 700; font-size: 18px; cursor: pointer; }

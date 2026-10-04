@@ -19,6 +19,10 @@ export const SITE_URL = (process.env.NEXT_PUBLIC_SITE_URL ?? "https://friendscra
 
 export const PACKING_CHARGE = 250;
 
+/** Every item is shown at this % off; the struck-through price is price / (1 - discount), as on the printed price list. */
+export const DISCOUNT = 80;
+export const mrp = (price: number) => Math.round((price * 100) / (100 - DISCOUNT));
+
 export const LOCATION = {
   lat: 11.1553421,
   lng: 76.9444809,
