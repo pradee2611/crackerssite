@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { inr, products, waLink } from "@/lib/site";
+import { inr, PACKING_CHARGE, products, waLink } from "@/lib/site";
 import { useCart } from "./CartProvider";
 import { useLang } from "./LangProvider";
 
@@ -21,7 +21,9 @@ export default function CartDrawer() {
       "",
       ...rows,
       "",
-      `Total: ${inr(total)} + packing charge ₹250`,
+      `Items total: ${inr(total)}`,
+      `Packing charge: ${inr(PACKING_CHARGE)}`,
+      `Grand total: ${inr(total + PACKING_CHARGE)}`,
       "",
       "Name:",
       "Delivery / Pickup:",
