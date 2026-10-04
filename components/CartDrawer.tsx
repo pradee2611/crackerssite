@@ -21,7 +21,7 @@ export default function CartDrawer() {
       "",
       ...rows,
       "",
-      `Total: ${inr(total)} (before packing charges)`,
+      `Total: ${inr(total)} + packing charge ₹250`,
       "",
       "Name:",
       "Delivery / Pickup:",

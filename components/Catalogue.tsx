@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import { useMemo, useState } from "react";
-import { categories, inr, products } from "@/lib/site";
+import { categories, familyOrder, inr, products, type Product } from "@/lib/site";
 import { useCart } from "./CartProvider";
 import { useLang } from "./LangProvider";
 
@@ -17,15 +17,25 @@ export default function Catalogue() {
 
   const list = useMemo(() => {
     const term = q.trim().toLowerCase();
-    let l = products.filter(
+    return products.filter(
       (p) =>
         (cat === "All" || p.category === cat) &&
         (!term || `${p.name} ${p.variant} ${p.category}`.toLowerCase().includes(term))
     );
-    if (sort === "low") l = [...l].sort((a, b) => a.price - b.price);
-    if (sort === "high") l = [...l].sort((a, b) => b.price - a.price);
-    return l;
-  }, [cat, q, sort]);
+  }, [cat, q]);
+
+  // One block per category: heading first, then its crackers. Related items stay side by side.
+  const groups = useMemo(() => {
+    return categories
+      .map((c) => {
+        let items: Product[] = list.filter((p) => p.category === c);
+        if (sort === "low") items = [...items].sort((a, b) => a.price - b.price);
+        else if (sort === "high") items = [...items].sort((a, b) => b.price - a.price);
+        else items = familyOrder(items);
+        return { c, items };
+      })
+      .filter((g) => g.items.length > 0);
+  }, [list, sort]);
 
   return (
     <section id="shop" className="section wrap">
@@ -59,8 +69,14 @@ export default function Catalogue() {
       {list.length === 0 ? (
         <p className="empty">{t("shop.none")}</p>
       ) : (
+        groups.map((g, gi) => (
+        <div className="cat-block" key={g.c} id={`cat-${gi}`}>
+          <h3 className="cat-head">
+            <span>{catLabel(g.c)}</span>
+            <small>{g.items.length}</small>
+          </h3>
         <div className="grid">
-          {list.map((p, i) => {
+          {g.items.map((p, i) => {
             const qty = cart[p.id] ?? 0;
             return (
               <article className="card" key={p.id}>
@@ -70,12 +86,11 @@ export default function Catalogue() {
                     alt={`${tr(p.name)} ${tr(p.variant)}`.trim()}
                     fill
                     sizes="(max-width: 600px) 50vw, (max-width: 1000px) 33vw, 20vw"
-                    priority={i < 4}
+                    priority={gi === 0 && i < 4}
                   />
                   <span className="no">#{p.id}</span>
                 </div>
                 <div className="info">
-                  <small className="cat">{catLabel(p.category)}</small>
                   <h3>{tr(p.name)}</h3>
                   {p.variant && <span className="variant">{tr(p.variant)}</span>}
                   <div className="buy">
@@ -95,6 +110,8 @@ export default function Catalogue() {
             );
           })}
         </div>
+        </div>
+        ))
       )}
     </section>
   );

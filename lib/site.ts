@@ -40,12 +40,38 @@ export const SITE = {
     { label: "Deepak", number: "82709 32722" },
   ],
   notice:
-    "Pre-order prices for 2026. Prices in the shop may vary and packing charges may be added.",
+    "Pre-order prices for 2026. Prices in the shop may vary. Packing charge ₹250.",
 };
 
-export type Combo = { title: string; price: number; free: string; items: { name: string; qty: string; price: number }[] };
+export type Combo = { title: string; price: number; free: string; items: { name: string; qty: string }[] };
 export const combos = comboData.combos as Combo[];
 export const giftBoxes = comboData.giftBoxes as number[];
+
+/** Keep related crackers together (Chakkar Big / Special / Deluxe, Match Box Small / Big ...). */
+export function family(name: string): string {
+  const cm = name.match(/^\s*(\d+)\s*cm\b/);
+  if (cm) return cm[1] + " cm";
+  return name
+    .replace(/^\s*[\d½¾¼.]+"\s*/, "")
+    .replace(/\(.*?\)/g, "")
+    .replace(/\b(Small|Big|Special|Deluxe|Super|Asoka|Gold)\b/gi, "")
+    .replace(/\s+/g, " ")
+    .trim()
+    .toLowerCase()
+    .replace(/s\b/g, "");
+}
+
+export function familyOrder(list: Product[]): Product[] {
+  const groups = new Map<string, Product[]>();
+  for (const p of list) {
+    const k = family(p.name);
+    groups.set(k, [...(groups.get(k) ?? []), p]);
+  }
+  const min = (g: Product[], f: (p: Product) => number) => Math.min(...g.map(f));
+  return [...groups.values()]
+    .sort((a, b) => min(a, (p) => p.price) - min(b, (p) => p.price) || min(a, (p) => p.id) - min(b, (p) => p.id))
+    .flatMap((g) => [...g].sort((a, b) => a.price - b.price || a.id - b.id));
+}
 
 export const inr = (n: number) => "₹" + n.toLocaleString("en-IN");
 
