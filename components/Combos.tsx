@@ -15,21 +15,21 @@ export default function Combos() {
           return (
             <article className="combo" key={c.title}>
               <header className="combo-top">
-                <h3>{c.title}</h3>
+                <h3>{tr(c.title)}</h3>
                 <b className="combo-price">{inr(c.price)}</b>
-                <span className="combo-free">🎁 {t("combo.free", { f: c.free })}</span>
+                <span className="combo-free">🎁 {t("combo.free", { f: tr(c.free) })}</span>
               </header>
               <ol className="combo-items">
                 {c.items.map((i, n) => (
                   <li key={n}>
                     <span className="ci">{n + 1}</span>
-                    <span className="cn">{i.name}</span>
+                    <span className="cn">{tr(i.name)}</span>
                     <span className="cq">× {tr(i.qty)}</span>
                   </li>
                 ))}
               </ol>
               <footer className="combo-foot">
-                <span>{t("combo.summary", { n: c.items.length, f: c.free })}</span>
+                <span>{t("combo.summary", { n: c.items.length, f: tr(c.free) })}</span>
                 <a className="btn wa sm" href={waLink(msg)} target="_blank" rel="noopener noreferrer">{t("combo.order")}</a>
               </footer>
             </article>
