@@ -84,3 +84,31 @@ export const inr = (n: number) => "₹" + n.toLocaleString("en-IN");
 export function waLink(text: string) {
   return `https://wa.me/${SITE.whatsapp}?text=${encodeURIComponent(text)}`;
 }
+
+export const STATES = [
+  "Tamil Nadu", "Kerala", "Karnataka", "Andhra Pradesh", "Telangana", "Puducherry",
+  "Andaman and Nicobar Islands", "Arunachal Pradesh", "Assam", "Bihar", "Chandigarh", "Chhattisgarh",
+  "Dadra and Nagar Haveli and Daman and Diu", "Delhi", "Goa", "Gujarat", "Haryana", "Himachal Pradesh",
+  "Jammu and Kashmir", "Jharkhand", "Ladakh", "Lakshadweep", "Madhya Pradesh", "Maharashtra", "Manipur",
+  "Meghalaya", "Mizoram", "Nagaland", "Odisha", "Punjab", "Rajasthan", "Sikkim", "Tripura", "Uttar Pradesh",
+  "Uttarakhand", "West Bengal",
+];
+
+export type Customer = { name: string; phone: string; address: string; city: string; state: string; pincode: string };
+export const EMPTY_CUSTOMER: Customer = { name: "", phone: "", address: "", city: "", state: "Tamil Nadu", pincode: "" };
+
+/** Name, address and city are needed before an order can be sent. */
+export const customerReady = (c: Customer) => !!(c.name.trim() && c.address.trim() && c.city.trim());
+
+/** Customer block appended to every WhatsApp order message. */
+export function customerLines(c: Customer): string[] {
+  return [
+    "Customer details:",
+    `Name: ${c.name.trim()}`,
+    ...(c.phone.trim() ? [`Phone: ${c.phone.trim()}`] : []),
+    `Address: ${c.address.trim()}`,
+    `City / Location: ${c.city.trim()}`,
+    `State: ${c.state}`,
+    ...(c.pincode.trim() ? [`Pincode: ${c.pincode.trim()}`] : []),
+  ];
+}

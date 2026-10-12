@@ -1,13 +1,16 @@
 "use client";
 
 import Image from "next/image";
-import { inr, PACKING_CHARGE, products, waLink } from "@/lib/site";
+import { customerLines, inr, PACKING_CHARGE, products, waLink } from "@/lib/site";
 import { useCart } from "./CartProvider";
+import CustomerForm from "./CustomerForm";
+import { useCustomer } from "./CustomerProvider";
 import { useLang } from "./LangProvider";
 
 export default function CartDrawer() {
   const { cart, total, count, open, setOpen, setQty, clear } = useCart();
   const { t, name: tr } = useLang();
+  const { customer, ready } = useCustomer();
   const lines = Object.entries(cart)
     .map(([id, qty]) => ({ p: products.find((x) => x.id === Number(id))!, qty }))
     .filter((l) => l.p);
@@ -25,8 +28,7 @@ export default function CartDrawer() {
       `Packing charge: ${inr(PACKING_CHARGE)}`,
       `Grand total: ${inr(total + PACKING_CHARGE)}`,
       "",
-      "Name:",
-      "Delivery / Pickup:",
+      ...customerLines(customer),
     ].join("\n");
   }
 
@@ -39,6 +41,7 @@ export default function CartDrawer() {
           <button onClick={() => setOpen(false)} aria-label={t("cart.close")}>✕</button>
         </div>
 
+        <div className="drawer-body">
         {lines.length === 0 ? (
           <p className="empty">{t("cart.empty")}</p>
         ) : (
@@ -61,13 +64,15 @@ export default function CartDrawer() {
             ))}
           </ul>
         )}
+        {lines.length > 0 && <CustomerForm idPrefix="cart" />}
+        </div>
 
         <div className="drawer-foot">
           <div className="total"><span>{t("cart.total")}</span><b>{inr(total)}</b></div>
           <p className="note">{t("notice")}</p>
           <a
-            className={`btn wa ${lines.length === 0 ? "disabled" : ""}`}
-            href={lines.length ? waLink(message()) : undefined}
+            className={`btn wa ${lines.length === 0 || !ready ? "disabled" : ""}`}
+            href={lines.length && ready ? waLink(message()) : undefined}
             target="_blank"
             rel="noopener noreferrer"
           >

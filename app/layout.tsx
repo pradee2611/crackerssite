@@ -11,6 +11,7 @@ import "@fontsource/noto-sans-malayalam/600.css";
 import "@fontsource/noto-sans-malayalam/700.css";
 import "./globals.css";
 import { CartProvider } from "@/components/CartProvider";
+import { CustomerProvider } from "@/components/CustomerProvider";
 import { LangProvider } from "@/components/LangProvider";
 import Header from "@/components/Header";
 import CartDrawer from "@/components/CartDrawer";
@@ -92,10 +93,12 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
         <LangProvider>
           <CartProvider>
-            <Header />
-            <main>{children}</main>
-            <Footer />
-            <CartDrawer />
+            <CustomerProvider>
+              <Header />
+              <main>{children}</main>
+              <Footer />
+              <CartDrawer />
+            </CustomerProvider>
           </CartProvider>
         </LangProvider>
       </body>
