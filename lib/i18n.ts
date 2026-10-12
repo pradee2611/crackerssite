@@ -9,6 +9,11 @@ export const LANGS: { code: Lang; label: string; name: string }[] = [
 type Dict = Record<string, string>;
 
 const en: Dict = {
+  "cust.district": "District",
+  "cust.pin.loading": "Looking up pincode…",
+  "cust.pin.ok": "✓ State, district and area filled from pincode",
+  "cust.pin.missing": "Pincode not found. Please check it or enter the details yourself.",
+  "cust.pin.error": "Could not look up the pincode. Please enter state and district yourself.",
   "cust.title": "Your details",
   "cust.name": "Full name",
   "cust.phone": "Phone number",
@@ -16,7 +21,7 @@ const en: Dict = {
   "cust.city": "City / Location",
   "cust.pin": "Pincode",
   "cust.state": "State",
-  "cust.need": "All details are mandatory. Enter name, phone (10 digits), address, city and pincode (6 digits) to place the order.",
+  "cust.need": "All details are mandatory. Enter name, phone (10 digits), address, pincode (6 digits), district and city to place the order.",
   "nav.shop": "Shop",
   "nav.combos": "Combos",
   "nav.price": "Price list",
@@ -90,6 +95,11 @@ const en: Dict = {
 };
 
 const ta: Dict = {
+  "cust.district": "மாவட்டம்",
+  "cust.pin.loading": "அஞ்சல் குறியீடு தேடப்படுகிறது…",
+  "cust.pin.ok": "✓ மாநிலம், மாவட்டம், பகுதி தானாக நிரப்பப்பட்டன",
+  "cust.pin.missing": "அஞ்சல் குறியீடு கிடைக்கவில்லை. சரிபார்க்கவும் அல்லது நீங்களே உள்ளிடவும்.",
+  "cust.pin.error": "அஞ்சல் குறியீட்டைத் தேட முடியவில்லை. மாநிலம், மாவட்டத்தை நீங்களே உள்ளிடவும்.",
   "cust.title": "உங்கள் விவரங்கள்",
   "cust.name": "முழு பெயர்",
   "cust.phone": "தொலைபேசி எண்",
@@ -171,6 +181,11 @@ const ta: Dict = {
 };
 
 const ml: Dict = {
+  "cust.district": "ജില്ല",
+  "cust.pin.loading": "പിൻകോഡ് പരിശോധിക്കുന്നു…",
+  "cust.pin.ok": "✓ സംസ്ഥാനം, ജില്ല, പ്രദേശം സ്വയം നിറച്ചു",
+  "cust.pin.missing": "പിൻകോഡ് കണ്ടെത്തിയില്ല. പരിശോധിക്കുക അല്ലെങ്കിൽ സ്വയം നൽകുക.",
+  "cust.pin.error": "പിൻകോഡ് പരിശോധിക്കാനായില്ല. സംസ്ഥാനവും ജില്ലയും സ്വയം നൽകുക.",
   "cust.title": "നിങ്ങളുടെ വിവരങ്ങൾ",
   "cust.name": "മുഴുവൻ പേര്",
   "cust.phone": "ഫോൺ നമ്പർ",
