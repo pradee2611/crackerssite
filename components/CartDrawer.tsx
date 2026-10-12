@@ -84,7 +84,6 @@ export default function CartDrawer() {
           </ul>
         )}
         {lines.length > 0 && <CustomerForm idPrefix="cart" />}
-        </div>
 
         <div className="drawer-foot">
           <div className="total"><span>{t("cart.total")}</span><b>{inr(total)}</b></div>
@@ -100,6 +99,7 @@ export default function CartDrawer() {
           {lines.length > 0 && (
             <button className="link" onClick={clear}>{t("cart.clear")}</button>
           )}
+        </div>
         </div>
       </aside>
     </>
