@@ -94,15 +94,16 @@ export const STATES = [
   "Uttarakhand", "West Bengal",
 ];
 
-export type Customer = { name: string; phone: string; address: string; city: string; state: string; pincode: string };
-export const EMPTY_CUSTOMER: Customer = { name: "", phone: "", address: "", city: "", state: "Tamil Nadu", pincode: "" };
+export type Customer = { name: string; phone: string; address: string; city: string; district: string; state: string; pincode: string };
+export const EMPTY_CUSTOMER: Customer = { name: "", phone: "", address: "", city: "", district: "", state: "Tamil Nadu", pincode: "" };
 
-/** Every detail is mandatory: name, 10-digit phone, address, city, state and 6-digit pincode. */
+/** Every detail is mandatory: name, 10-digit phone, address, city, district, state and 6-digit pincode. */
 export const customerReady = (c: Customer) =>
   !!(
     c.name.trim() &&
     c.address.trim() &&
     c.city.trim() &&
+    c.district.trim() &&
     c.state &&
     c.phone.replace(/\D/g, "").length >= 10 &&
     /^\d{6}$/.test(c.pincode.trim())
@@ -116,6 +117,7 @@ export function customerLines(c: Customer): string[] {
     `Phone: ${c.phone.trim()}`,
     `Address: ${c.address.trim()}`,
     `City / Location: ${c.city.trim()}`,
+    `District: ${c.district.trim()}`,
     `State: ${c.state}`,
     `Pincode: ${c.pincode.trim()}`,
   ];
