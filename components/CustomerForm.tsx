@@ -24,6 +24,10 @@ export default function CustomerForm({ idPrefix }: { idPrefix: string }) {
     const ctl = new AbortController();
     abort.current = ctl;
     setStatus("loading");
+    // values from the previous pincode no longer apply
+    setField("district", "");
+    setField("city", "");
+    setAreas([]);
     try {
       const info = await lookupPincode(pin, ctl.signal);
       if (ctl.signal.aborted) return;
@@ -34,7 +38,7 @@ export default function CustomerForm({ idPrefix }: { idPrefix: string }) {
       }
       setField("state", info.state);
       setField("district", info.district);
-      setField("city", info.district);
+      setField("city", info.areas.length === 1 ? info.areas[0] : info.district);
       setAreas(info.areas);
       setStatus("ok");
     } catch {
@@ -67,8 +71,15 @@ export default function CustomerForm({ idPrefix }: { idPrefix: string }) {
         </div>
       </div>
       <label htmlFor={id("city")}>{t("cust.city")} *</label>
-      <input id={id("city")} name="city" list={id("areas")} autoComplete="address-level2" required value={customer.city} onChange={(e) => setField("city", e.target.value)} />
-      <datalist id={id("areas")}>{areas.map((a) => <option key={a} value={a} />)}</datalist>
+      <input id={id("city")} name="city" autoComplete="address-level2" required value={customer.city} onChange={(e) => setField("city", e.target.value)} />
+      {areas.length > 1 && (
+        <div className="cust-areas" role="group" aria-label={t("cust.areas")}>
+          <span>{t("cust.areas")}</span>
+          {areas.map((a) => (
+            <button type="button" key={a} className={`chip ${customer.city === a ? "on" : ""}`} onMouseDown={(e) => e.preventDefault()} onClick={() => setField("city", a)}>{a}</button>
+          ))}
+        </div>
+      )}
       {!ready && <p className="cust-need">{t("cust.need")}</p>}
     </form>
   );

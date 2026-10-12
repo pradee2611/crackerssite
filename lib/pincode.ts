@@ -21,6 +21,8 @@ export async function lookupPincode(pin: string, signal?: AbortSignal): Promise<
   if (!first) return null;
   const state = matchState(first.State!);
   if (!state) return null;
-  const areas = Array.from(new Set(offices.map((o) => (o.Name ?? "").trim()).filter(Boolean)));
+  // "Coimbatore H.O", "Ganapathy S.O", "Kokkal B.O" -> plain place names
+  const clean = (n: string) => n.replace(/\s+(H\.?\s?O|S\.?\s?O|B\.?\s?O|P\.?\s?O)\.?$/i, "").trim();
+  const areas = Array.from(new Set(offices.map((o) => clean(o.Name ?? "")).filter(Boolean)));
   return { state, district: first.District!.trim(), areas };
 }
