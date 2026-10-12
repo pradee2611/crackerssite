@@ -226,3 +226,11 @@ a { color: inherit; }
 .cust-status.missing, .cust-status.error { color: var(--red-2); }
 .cust-need { margin: 6px 0 0; font-size: 12px; color: var(--red-2); }
 .combo-cust { max-width: 520px; margin: 0 auto 24px; background: #fff; border: 3px solid #e2b23a; border-radius: 16px; }
+
+/* short phone screens: keep more room for the order form above the send button */
+@media (max-height: 760px) {
+  .drawer-foot { padding: 10px 16px 12px; gap: 6px; }
+  .drawer-foot .note { display: none; }
+  .total { font-size: 16px; }
+  .drawer-foot .btn { padding: 10px 16px; }
+}
