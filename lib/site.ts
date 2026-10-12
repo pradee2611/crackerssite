@@ -97,18 +97,26 @@ export const STATES = [
 export type Customer = { name: string; phone: string; address: string; city: string; state: string; pincode: string };
 export const EMPTY_CUSTOMER: Customer = { name: "", phone: "", address: "", city: "", state: "Tamil Nadu", pincode: "" };
 
-/** Name, address and city are needed before an order can be sent. */
-export const customerReady = (c: Customer) => !!(c.name.trim() && c.address.trim() && c.city.trim());
+/** Every detail is mandatory: name, 10-digit phone, address, city, state and 6-digit pincode. */
+export const customerReady = (c: Customer) =>
+  !!(
+    c.name.trim() &&
+    c.address.trim() &&
+    c.city.trim() &&
+    c.state &&
+    c.phone.replace(/\D/g, "").length >= 10 &&
+    /^\d{6}$/.test(c.pincode.trim())
+  );
 
 /** Customer block appended to every WhatsApp order message. */
 export function customerLines(c: Customer): string[] {
   return [
     "Customer details:",
     `Name: ${c.name.trim()}`,
-    ...(c.phone.trim() ? [`Phone: ${c.phone.trim()}`] : []),
+    `Phone: ${c.phone.trim()}`,
     `Address: ${c.address.trim()}`,
     `City / Location: ${c.city.trim()}`,
     `State: ${c.state}`,
-    ...(c.pincode.trim() ? [`Pincode: ${c.pincode.trim()}`] : []),
+    `Pincode: ${c.pincode.trim()}`,
   ];
 }
