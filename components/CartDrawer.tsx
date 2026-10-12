@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import { useEffect } from "react";
 import { customerLines, inr, PACKING_CHARGE, products, waLink } from "@/lib/site";
 import { useCart } from "./CartProvider";
 import CustomerForm from "./CustomerForm";
@@ -11,6 +12,24 @@ export default function CartDrawer() {
   const { cart, total, count, open, setOpen, setQty, clear } = useCart();
   const { t, name: tr } = useLang();
   const { customer, ready } = useCustomer();
+  // On phones the on-screen keyboard shrinks the visible area; keep the drawer inside it so inputs stay visible.
+  useEffect(() => {
+    const vv = window.visualViewport;
+    if (!vv) return;
+    const sync = () => {
+      const root = document.documentElement.style;
+      root.setProperty("--vvh", `${vv.height}px`);
+      root.setProperty("--vvt", `${vv.offsetTop}px`);
+    };
+    sync();
+    vv.addEventListener("resize", sync);
+    vv.addEventListener("scroll", sync);
+    return () => {
+      vv.removeEventListener("resize", sync);
+      vv.removeEventListener("scroll", sync);
+    };
+  }, []);
+
   const lines = Object.entries(cart)
     .map(([id, qty]) => ({ p: products.find((x) => x.id === Number(id))!, qty }))
     .filter((l) => l.p);

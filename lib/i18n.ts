@@ -9,6 +9,7 @@ export const LANGS: { code: Lang; label: string; name: string }[] = [
 type Dict = Record<string, string>;
 
 const en: Dict = {
+  "cust.areas": "Tap your area",
   "cust.district": "District",
   "cust.pin.loading": "Looking up pincode…",
   "cust.pin.ok": "✓ State, district and area filled from pincode",
@@ -95,6 +96,7 @@ const en: Dict = {
 };
 
 const ta: Dict = {
+  "cust.areas": "உங்கள் பகுதியைத் தேர்வு செய்யவும்",
   "cust.district": "மாவட்டம்",
   "cust.pin.loading": "அஞ்சல் குறியீடு தேடப்படுகிறது…",
   "cust.pin.ok": "✓ மாநிலம், மாவட்டம், பகுதி தானாக நிரப்பப்பட்டன",
@@ -181,6 +183,7 @@ const ta: Dict = {
 };
 
 const ml: Dict = {
+  "cust.areas": "നിങ്ങളുടെ പ്രദേശം തിരഞ്ഞെടുക്കുക",
   "cust.district": "ജില്ല",
   "cust.pin.loading": "പിൻകോഡ് പരിശോധിക്കുന്നു…",
   "cust.pin.ok": "✓ സംസ്ഥാനം, ജില്ല, പ്രദേശം സ്വയം നിറച്ചു",
