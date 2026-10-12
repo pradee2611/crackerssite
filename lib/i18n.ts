@@ -9,6 +9,14 @@ export const LANGS: { code: Lang; label: string; name: string }[] = [
 type Dict = Record<string, string>;
 
 const en: Dict = {
+  "cust.title": "Your details",
+  "cust.name": "Full name",
+  "cust.phone": "Phone number",
+  "cust.address": "Address (door no., street)",
+  "cust.city": "City / Location",
+  "cust.pin": "Pincode",
+  "cust.state": "State",
+  "cust.need": "Enter your name, address and city to send the order.",
   "nav.shop": "Shop",
   "nav.combos": "Combos",
   "nav.price": "Price list",
@@ -82,6 +90,14 @@ const en: Dict = {
 };
 
 const ta: Dict = {
+  "cust.title": "உங்கள் விவரங்கள்",
+  "cust.name": "முழு பெயர்",
+  "cust.phone": "தொலைபேசி எண்",
+  "cust.address": "முகவரி (கதவு எண், தெரு)",
+  "cust.city": "ஊர் / இடம்",
+  "cust.pin": "அஞ்சல் குறியீடு",
+  "cust.state": "மாநிலம்",
+  "cust.need": "ஆர்டர் அனுப்ப பெயர், முகவரி, ஊர் உள்ளிடவும்.",
   "nav.shop": "கடை",
   "nav.combos": "காம்போ",
   "nav.price": "விலைப் பட்டியல்",
@@ -155,6 +171,14 @@ const ta: Dict = {
 };
 
 const ml: Dict = {
+  "cust.title": "നിങ്ങളുടെ വിവരങ്ങൾ",
+  "cust.name": "മുഴുവൻ പേര്",
+  "cust.phone": "ഫോൺ നമ്പർ",
+  "cust.address": "വിലാസം (വീട്ടു നമ്പർ, തെരുവ്)",
+  "cust.city": "സ്ഥലം / നഗരം",
+  "cust.pin": "പിൻകോഡ്",
+  "cust.state": "സംസ്ഥാനം",
+  "cust.need": "ഓർഡർ അയയ്ക്കാൻ പേര്, വിലാസം, സ്ഥലം നൽകുക.",
   "nav.shop": "ഷോപ്പ്",
   "nav.combos": "കോംബോ",
   "nav.price": "വില പട്ടിക",
