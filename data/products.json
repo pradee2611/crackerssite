@@ -27,7 +27,7 @@
     "id": 4,
     "category": "One Sound Crackers",
     "name": "5\" Jallikattu",
-    "variant": "160",
+    "variant": "",
     "price": 75,
     "image": "/products/04.jpg"
   },
@@ -35,7 +35,7 @@
     "id": 5,
     "category": "One Sound Crackers",
     "name": "6\" Hulk",
-    "variant": "120",
+    "variant": "",
     "price": 95,
     "image": "/products/05.jpg"
   },

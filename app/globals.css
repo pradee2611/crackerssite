@@ -225,8 +225,17 @@ a { color: inherit; }
 .cust-status.ok { color: var(--green); }
 .cust-status.missing, .cust-status.error { color: var(--red-2); }
 .cust-need { margin: 6px 0 0; font-size: 12px; color: var(--red-2); }
-.combo-cust { max-width: 520px; margin: 0 auto 24px; background: #fff; border: 3px solid #e2b23a; border-radius: 16px; }
 
 
 .cust-areas { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; margin-top: 6px; }
 .cust-areas span { font-size: 12px; color: #6b4a4a; width: 100%; }
+
+/* combo order pop-up */
+.modal-scrim { position: fixed; inset: 0; z-index: 60; background: rgba(0,0,0,.55); display: flex; align-items: center; justify-content: center; padding: 12px; }
+.modal { background: var(--cream); width: min(480px, 100%); max-height: calc(var(--vvh, 100dvh) - 24px); display: flex; flex-direction: column; border-radius: 16px; overflow: hidden; box-shadow: 0 20px 50px rgba(0,0,0,.45); }
+.modal-head { display: flex; justify-content: space-between; align-items: center; gap: 10px; padding: 14px 16px; background: var(--red); color: #fff; }
+.modal-head h3 { margin: 0; font-size: 17px; }
+.modal-head button { background: none; border: 0; color: #fff; font-size: 20px; cursor: pointer; }
+.modal-body { overflow-y: auto; }
+.modal-foot { padding: 14px 16px 18px; border-top: 3px solid var(--gold); background: #fff; display: flex; flex-direction: column; gap: 8px; }
+.modal-foot .btn { text-align: center; }
