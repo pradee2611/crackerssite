@@ -68,7 +68,7 @@
     "category": "Bomb",
     "name": "King of King Bomb",
     "variant": "",
-    "price": 130,
+    "price": 150,
     "image": "/products/20.jpg"
   },
   {
@@ -76,7 +76,7 @@
     "category": "Bomb",
     "name": "Classic Bomb",
     "variant": "",
-    "price": 150,
+    "price": 180,
     "image": "/products/21.jpg"
   },
   {
@@ -84,7 +84,7 @@
     "category": "Bomb",
     "name": "Digital Bomb",
     "variant": "",
-    "price": 310,
+    "price": 350,
     "image": "/products/22.jpg"
   },
   {
@@ -100,19 +100,11 @@
     "category": "Mini Wala",
     "name": "24 Deluxe",
     "variant": "",
-    "price": 50,
+    "price": 60,
     "image": "/products/07.jpg"
   },
   {
     "id": 14,
-    "category": "Mini Wala",
-    "name": "28 Deluxe",
-    "variant": "",
-    "price": 60,
-    "image": "/products/09.jpg"
-  },
-  {
-    "id": 15,
     "category": "Mini Wala",
     "name": "100 Deluxe",
     "variant": "",
@@ -120,7 +112,7 @@
     "image": "/products/08.jpg"
   },
   {
-    "id": 16,
+    "id": 15,
     "category": "Wala / Garlands",
     "name": "100 Wala",
     "variant": "",
@@ -128,7 +120,7 @@
     "image": "/products/10.jpg"
   },
   {
-    "id": 17,
+    "id": 16,
     "category": "Wala / Garlands",
     "name": "1000 Wala",
     "variant": "Half",
@@ -136,7 +128,7 @@
     "image": "/products/11.jpg"
   },
   {
-    "id": 18,
+    "id": 17,
     "category": "Wala / Garlands",
     "name": "1000 Wala",
     "variant": "Full Count",
@@ -144,7 +136,7 @@
     "image": "/products/12.jpg"
   },
   {
-    "id": 19,
+    "id": 18,
     "category": "Wala / Garlands",
     "name": "2000 Wala",
     "variant": "",
@@ -152,7 +144,7 @@
     "image": "/products/13.jpg"
   },
   {
-    "id": 20,
+    "id": 19,
     "category": "Wala / Garlands",
     "name": "5000 Wala",
     "variant": "",
@@ -160,7 +152,7 @@
     "image": "/products/14.jpg"
   },
   {
-    "id": 21,
+    "id": 20,
     "category": "Wala / Garlands",
     "name": "10,000 Wala",
     "variant": "",
@@ -168,7 +160,7 @@
     "image": "/products/15.jpg"
   },
   {
-    "id": 22,
+    "id": 21,
     "category": "Bijili",
     "name": "50 Red Bijili",
     "variant": "",
@@ -176,7 +168,7 @@
     "image": "/products/16.jpg"
   },
   {
-    "id": 23,
+    "id": 22,
     "category": "Bijili",
     "name": "50 Striped Bijili",
     "variant": "",
@@ -184,7 +176,7 @@
     "image": "/products/17.jpg"
   },
   {
-    "id": 24,
+    "id": 23,
     "category": "Bijili",
     "name": "100 Red Bijili",
     "variant": "",
@@ -192,7 +184,7 @@
     "image": "/products/18.jpg"
   },
   {
-    "id": 25,
+    "id": 24,
     "category": "Bijili",
     "name": "100 Striped Bijili",
     "variant": "",
@@ -200,39 +192,39 @@
     "image": "/products/19.jpg"
   },
   {
-    "id": 26,
+    "id": 25,
     "category": "Rocket",
     "name": "Rocket Bomb",
     "variant": "",
-    "price": 80,
+    "price": 90,
     "image": "/products/26.jpg"
+  },
+  {
+    "id": 26,
+    "category": "Rocket",
+    "name": "Whistling Rocket",
+    "variant": "5 pcs",
+    "price": 120,
+    "image": "/products/28.jpg"
   },
   {
     "id": 27,
     "category": "Rocket",
     "name": "Whistling Rocket",
-    "variant": "5 pcs",
-    "price": 110,
-    "image": "/products/28.jpg"
+    "variant": "10 pcs",
+    "price": 230,
+    "image": "/products/29.jpg"
   },
   {
     "id": 28,
     "category": "Rocket",
-    "name": "Whistling Rocket",
-    "variant": "10 pcs",
-    "price": 220,
-    "image": "/products/29.jpg"
-  },
-  {
-    "id": 29,
-    "category": "Rocket",
     "name": "Lunik Rocket",
     "variant": "",
-    "price": 120,
+    "price": 130,
     "image": "/products/27.jpg"
   },
   {
-    "id": 30,
+    "id": 29,
     "category": "Flower Pots",
     "name": "Flower Pots Special",
     "variant": "",
@@ -240,15 +232,7 @@
     "image": "/products/31.jpg"
   },
   {
-    "id": 31,
-    "category": "Flower Pots",
-    "name": "Flower Pot Super Deluxe",
-    "variant": "",
-    "price": 110,
-    "image": "/products/81.jpg"
-  },
-  {
-    "id": 32,
+    "id": 30,
     "category": "Flower Pots",
     "name": "Flower Pots Asoka",
     "variant": "",
@@ -256,7 +240,7 @@
     "image": "/products/30.jpg"
   },
   {
-    "id": 33,
+    "id": 31,
     "category": "Flower Pots",
     "name": "Colour Koti",
     "variant": "",
@@ -264,7 +248,7 @@
     "image": "/products/32.jpg"
   },
   {
-    "id": 34,
+    "id": 32,
     "category": "Flower Pots",
     "name": "Deluxe Colour Koti",
     "variant": "",
@@ -272,7 +256,7 @@
     "image": "/products/33.jpg"
   },
   {
-    "id": 35,
+    "id": 33,
     "category": "Ground Chakkar",
     "name": "Chakkar Big",
     "variant": "",
@@ -280,7 +264,7 @@
     "image": "/products/82.jpg"
   },
   {
-    "id": 36,
+    "id": 34,
     "category": "Ground Chakkar",
     "name": "Chakkar Special",
     "variant": "",
@@ -288,7 +272,7 @@
     "image": "/products/34.jpg"
   },
   {
-    "id": 37,
+    "id": 35,
     "category": "Ground Chakkar",
     "name": "Chakkar Deluxe",
     "variant": "",
@@ -296,7 +280,7 @@
     "image": "/products/35.jpg"
   },
   {
-    "id": 38,
+    "id": 36,
     "category": "Ground Chakkar",
     "name": "Jeni's Special Spinner",
     "variant": "",
@@ -304,7 +288,7 @@
     "image": "/products/36.jpg"
   },
   {
-    "id": 39,
+    "id": 37,
     "category": "Ground Chakkar",
     "name": "Jeni's Deluxe Spinner",
     "variant": "",
@@ -312,23 +296,23 @@
     "image": "/products/37.jpg"
   },
   {
-    "id": 40,
+    "id": 38,
     "category": "Special Fountain",
     "name": "Water Queen",
     "variant": "",
-    "price": 160,
+    "price": 200,
     "image": "/products/40.jpg"
   },
   {
-    "id": 41,
+    "id": 39,
     "category": "Special Fountain",
     "name": "Nemo",
     "variant": "5 pcs",
-    "price": 220,
+    "price": 250,
     "image": "/products/43.jpg"
   },
   {
-    "id": 42,
+    "id": 40,
     "category": "Special Fountain",
     "name": "Jigarthanda",
     "variant": "3 pcs",
@@ -336,87 +320,79 @@
     "image": "/products/41.jpg"
   },
   {
-    "id": 43,
-    "category": "Special Fountain",
-    "name": "Tri Colour",
-    "variant": "5 pcs",
-    "price": 320,
-    "image": "/products/44.jpg"
-  },
-  {
-    "id": 44,
+    "id": 41,
     "category": "Special Fountain",
     "name": "Thunder Coconut",
     "variant": "3 pcs",
-    "price": 380,
+    "price": 400,
     "image": "/products/42.jpg"
   },
   {
-    "id": 45,
+    "id": 42,
     "category": "Fancy Fountain",
     "name": "Peacock",
     "variant": "3 Face",
-    "price": 190,
+    "price": 220,
     "image": "/products/46.jpg"
   },
   {
-    "id": 46,
+    "id": 43,
     "category": "Fancy Fountain",
     "name": "Siren",
     "variant": "3 pcs",
-    "price": 220,
+    "price": 250,
     "image": "/products/45.jpg"
   },
   {
-    "id": 47,
+    "id": 44,
     "category": "Fancy Fountain",
     "name": "Bada Peacock",
     "variant": "",
-    "price": 450,
+    "price": 500,
     "image": "/products/47.jpg"
+  },
+  {
+    "id": 45,
+    "category": "Other Varieties (Flying)",
+    "name": "Butterfly",
+    "variant": "",
+    "price": 140,
+    "image": "/products/78.jpg"
+  },
+  {
+    "id": 46,
+    "category": "Other Varieties (Flying)",
+    "name": "Photo Flash",
+    "variant": "",
+    "price": 160,
+    "image": "/products/50.jpg"
+  },
+  {
+    "id": 47,
+    "category": "Other Varieties (Flying)",
+    "name": "Bambaram",
+    "variant": "",
+    "price": 200,
+    "image": "/products/49.jpg"
   },
   {
     "id": 48,
     "category": "Other Varieties (Flying)",
-    "name": "Butterfly",
+    "name": "Colour Smoke",
     "variant": "",
-    "price": 120,
-    "image": "/products/78.jpg"
+    "price": 200,
+    "image": "/products/51.jpg"
   },
   {
     "id": 49,
     "category": "Other Varieties (Flying)",
-    "name": "Photo Flash",
-    "variant": "",
-    "price": 140,
-    "image": "/products/50.jpg"
-  },
-  {
-    "id": 50,
-    "category": "Other Varieties (Flying)",
-    "name": "Bambaram",
-    "variant": "",
-    "price": 180,
-    "image": "/products/49.jpg"
-  },
-  {
-    "id": 51,
-    "category": "Other Varieties (Flying)",
-    "name": "Colour Smoke",
-    "variant": "",
-    "price": 180,
-    "image": "/products/51.jpg"
-  },
-  {
-    "id": 52,
-    "category": "Other Varieties (Flying)",
     "name": "Drone",
     "variant": "",
-    "price": 200,
+    "price": 220,
     "image": "/products/48.jpg"
   },
   {
-    "id": 53,
+    "id": 50,
     "category": "Kids Special Crackers",
     "name": "Electric Stone",
     "variant": "",
@@ -424,7 +400,7 @@
     "image": "/products/55.jpg"
   },
   {
-    "id": 54,
+    "id": 51,
     "category": "Kids Special Crackers",
     "name": "Snake Tablet",
     "variant": "",
@@ -432,7 +408,7 @@
     "image": "/products/53.jpg"
   },
   {
-    "id": 55,
+    "id": 52,
     "category": "Kids Special Crackers",
     "name": "Kit Kat",
     "variant": "",
@@ -440,7 +416,7 @@
     "image": "/products/85.jpg"
   },
   {
-    "id": 56,
+    "id": 53,
     "category": "Kids Special Crackers",
     "name": "Pencil",
     "variant": "",
@@ -448,7 +424,7 @@
     "image": "/products/83.jpg"
   },
   {
-    "id": 57,
+    "id": 54,
     "category": "Kids Special Crackers",
     "name": "Match Box (Small)",
     "variant": "",
@@ -456,7 +432,7 @@
     "image": "/products/54.jpg"
   },
   {
-    "id": 58,
+    "id": 55,
     "category": "Kids Special Crackers",
     "name": "Match Box (Big)",
     "variant": "",
@@ -464,7 +440,7 @@
     "image": "/products/80.jpg"
   },
   {
-    "id": 59,
+    "id": 56,
     "category": "Kids Special Crackers",
     "name": "Toy Story",
     "variant": "",
@@ -472,7 +448,7 @@
     "image": "/products/84.jpg"
   },
   {
-    "id": 60,
+    "id": 57,
     "category": "Kids Special Crackers",
     "name": "Gun Combo (Brand)",
     "variant": "",
@@ -480,79 +456,71 @@
     "image": "/products/52.jpg"
   },
   {
-    "id": 61,
+    "id": 58,
     "category": "Single Night Fancy",
     "name": "Chotta Fancy",
     "variant": "",
-    "price": 50,
+    "price": 70,
     "image": "/products/56.jpg"
+  },
+  {
+    "id": 59,
+    "category": "Single Night Fancy",
+    "name": "2\" Fancy",
+    "variant": "",
+    "price": 140,
+    "image": "/products/57.jpg"
+  },
+  {
+    "id": 60,
+    "category": "Single Night Fancy",
+    "name": "2\" Fancy",
+    "variant": "3 pcs",
+    "price": 340,
+    "image": "/products/58.jpg"
+  },
+  {
+    "id": 61,
+    "category": "Single Night Fancy",
+    "name": "3½\" Single Ball",
+    "variant": "",
+    "price": 320,
+    "image": "/products/59.jpg"
   },
   {
     "id": 62,
     "category": "Single Night Fancy",
-    "name": "2\" Fancy",
+    "name": "4\" Single Ball",
     "variant": "",
-    "price": 120,
-    "image": "/products/57.jpg"
+    "price": 420,
+    "image": "/products/60.jpg"
   },
   {
     "id": 63,
     "category": "Single Night Fancy",
-    "name": "2\" Fancy",
-    "variant": "3 pcs",
-    "price": 320,
-    "image": "/products/58.jpg"
-  },
-  {
-    "id": 64,
-    "category": "Single Night Fancy",
-    "name": "3½\" Single Ball",
-    "variant": "",
-    "price": 300,
-    "image": "/products/59.jpg"
-  },
-  {
-    "id": 65,
-    "category": "Single Night Fancy",
-    "name": "4\" Single Ball",
-    "variant": "",
-    "price": 400,
-    "image": "/products/60.jpg"
-  },
-  {
-    "id": 66,
-    "category": "Single Night Fancy",
     "name": "5\" Single Pipe",
     "variant": "",
-    "price": 750,
+    "price": 770,
     "image": "/products/79.jpg"
   },
   {
-    "id": 67,
-    "category": "Multicolour Shots",
-    "name": "15 Shot",
-    "variant": "",
-    "price": 300,
-    "image": "/products/61.jpg"
-  },
-  {
-    "id": 68,
+    "id": 64,
     "category": "Multicolour Shots",
     "name": "30 Shot",
     "variant": "",
-    "price": 450,
+    "price": 500,
     "image": "/products/62.jpg"
   },
   {
-    "id": 69,
+    "id": 65,
     "category": "Multicolour Shots",
     "name": "60 Shot",
     "variant": "",
-    "price": 900,
+    "price": 1000,
     "image": "/products/63.jpg"
   },
   {
-    "id": 70,
+    "id": 66,
     "category": "Multicolour Shots",
     "name": "120 Shot",
     "variant": "",
@@ -560,23 +528,23 @@
     "image": "/products/64.jpg"
   },
   {
-    "id": 71,
+    "id": 67,
     "category": "Twinkling Star",
     "name": "1½\" Twinkling Star",
     "variant": "",
-    "price": 30,
+    "price": 40,
     "image": "/products/38.jpg"
   },
   {
-    "id": 72,
+    "id": 68,
     "category": "Twinkling Star",
     "name": "4\" Twinkling Star",
     "variant": "",
-    "price": 75,
+    "price": 85,
     "image": "/products/39.jpg"
   },
   {
-    "id": 73,
+    "id": 69,
     "category": "Sparklers",
     "name": "10 cm Electric",
     "variant": "",
@@ -584,7 +552,7 @@
     "image": "/products/65.jpg"
   },
   {
-    "id": 74,
+    "id": 70,
     "category": "Sparklers",
     "name": "10 cm Colour",
     "variant": "",
@@ -592,7 +560,7 @@
     "image": "/products/68.jpg"
   },
   {
-    "id": 75,
+    "id": 71,
     "category": "Sparklers",
     "name": "10 cm Green",
     "variant": "",
@@ -600,7 +568,7 @@
     "image": "/products/67.jpg"
   },
   {
-    "id": 76,
+    "id": 72,
     "category": "Sparklers",
     "name": "10 cm Red",
     "variant": "",
@@ -608,7 +576,7 @@
     "image": "/products/66.jpg"
   },
   {
-    "id": 77,
+    "id": 73,
     "category": "Sparklers",
     "name": "15 cm Electric",
     "variant": "",
@@ -616,7 +584,7 @@
     "image": "/products/69.jpg"
   },
   {
-    "id": 78,
+    "id": 74,
     "category": "Sparklers",
     "name": "15 cm Colour",
     "variant": "",
@@ -624,7 +592,7 @@
     "image": "/products/72.jpg"
   },
   {
-    "id": 79,
+    "id": 75,
     "category": "Sparklers",
     "name": "15 cm Green",
     "variant": "",
@@ -632,7 +600,7 @@
     "image": "/products/71.jpg"
   },
   {
-    "id": 80,
+    "id": 76,
     "category": "Sparklers",
     "name": "15 cm Red",
     "variant": "",
@@ -640,7 +608,7 @@
     "image": "/products/70.jpg"
   },
   {
-    "id": 81,
+    "id": 77,
     "category": "Sparklers",
     "name": "30 cm Electric",
     "variant": "",
@@ -648,7 +616,7 @@
     "image": "/products/73.jpg"
   },
   {
-    "id": 82,
+    "id": 78,
     "category": "Sparklers",
     "name": "30 cm Colour",
     "variant": "",
@@ -656,7 +624,7 @@
     "image": "/products/76.jpg"
   },
   {
-    "id": 83,
+    "id": 79,
     "category": "Sparklers",
     "name": "30 cm Green",
     "variant": "",
@@ -664,7 +632,7 @@
     "image": "/products/75.jpg"
   },
   {
-    "id": 84,
+    "id": 80,
     "category": "Sparklers",
     "name": "30 cm Red",
     "variant": "",
@@ -672,7 +640,7 @@
     "image": "/products/74.jpg"
   },
   {
-    "id": 85,
+    "id": 81,
     "category": "Sparklers",
     "name": "50 cm Electric",
     "variant": "",

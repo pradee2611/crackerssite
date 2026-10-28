@@ -174,26 +174,50 @@
       "items": [
         {
           "name": "2¾\" Kuruvi",
-          "qty": "5 pkt"
+          "qty": "4 pkt"
         },
         {
           "name": "4\" Lakshmi",
-          "qty": "5 pkt"
+          "qty": "4 pkt"
         },
         {
           "name": "4\" Gold Lakshmi",
-          "qty": "2 pkt"
+          "qty": "3 pkt"
         },
         {
           "name": "5\" Jallikattu",
-          "qty": "2 pkt"
+          "qty": "1 pkt"
+        },
+        {
+          "name": "6\" Hulk",
+          "qty": "1 pkt"
+        },
+        {
+          "name": "Paper Bomb ¼ kg",
+          "qty": "1"
+        },
+        {
+          "name": "Paper Bomb ½ kg",
+          "qty": "1"
+        },
+        {
+          "name": "King of King Bomb",
+          "qty": "1"
+        },
+        {
+          "name": "28 Chorsa",
+          "qty": "1"
+        },
+        {
+          "name": "24 Deluxe",
+          "qty": "1"
         },
         {
           "name": "100 Wala",
           "qty": "1"
         },
         {
-          "name": "1000 Wala (Half)",
+          "name": "1000 Wala Half",
           "qty": "1"
         },
         {
@@ -205,23 +229,15 @@
           "qty": "1"
         },
         {
-          "name": "Classic Bomb",
-          "qty": "1"
-        },
-        {
-          "name": "Paper Bomb ¼ kg",
-          "qty": "1"
-        },
-        {
-          "name": "Paper Bomb ½ kg",
-          "qty": "1"
-        },
-        {
           "name": "Rocket Bomb",
           "qty": "1"
         },
         {
-          "name": "Flower Pots Special",
+          "name": "Flower Pots Asoka",
+          "qty": "1"
+        },
+        {
+          "name": "Chakkar Big",
           "qty": "1"
         },
         {
@@ -229,19 +245,11 @@
           "qty": "1"
         },
         {
-          "name": "1½\" Twinkling Star",
-          "qty": "1"
-        },
-        {
-          "name": "4\" Twinkling Star",
-          "qty": "1"
-        },
-        {
           "name": "Water Queen",
           "qty": "1"
         },
         {
-          "name": "Peacock (3 Face)",
+          "name": "Peacock 3 Face",
           "qty": "1"
         },
         {
@@ -249,51 +257,43 @@
           "qty": "1"
         },
         {
+          "name": "Match Box (Small)",
+          "qty": "1"
+        },
+        {
+          "name": "Chotta Fancy",
+          "qty": "1"
+        },
+        {
           "name": "30 Shot",
           "qty": "1"
         },
         {
-          "name": "10 cm Electric Sparklers",
+          "name": "1½\" Twinkling Star",
+          "qty": "2"
+        },
+        {
+          "name": "10 cm Electric",
           "qty": "1"
         },
         {
-          "name": "10 cm Red Sparklers",
+          "name": "10 cm Green",
           "qty": "1"
         },
         {
-          "name": "10 cm Green Sparklers",
+          "name": "30 cm Electric",
           "qty": "1"
         },
         {
-          "name": "10 cm Colour Sparklers",
+          "name": "30 cm Colour",
           "qty": "1"
         },
         {
-          "name": "30 cm Electric Sparklers",
+          "name": "30 cm Green",
           "qty": "1"
         },
         {
-          "name": "30 cm Red Sparklers",
-          "qty": "1"
-        },
-        {
-          "name": "30 cm Green Sparklers",
-          "qty": "1"
-        },
-        {
-          "name": "30 cm Colour Sparklers",
-          "qty": "1"
-        },
-        {
-          "name": "Butterfly",
-          "qty": "1"
-        },
-        {
-          "name": "Match Box (Big)",
-          "qty": "1"
-        },
-        {
-          "name": "Kit Kat",
+          "name": "30 cm Red",
           "qty": "1"
         }
       ]

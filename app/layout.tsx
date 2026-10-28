@@ -20,7 +20,7 @@ import { LOCATION, SITE, SITE_URL } from "@/lib/site";
 
 const TITLE = "Friends Crackers – Sivakasi Crackers in Coimbatore | 2026 Diwali Pre-order";
 const DESC =
-  "Friends Crackers (MK Groups), Perinayakampalayam, Coimbatore. 85 Sivakasi crackers and combo offers at pre-order prices. Wholesale & retail, bulk orders, delivery available. Order on WhatsApp.";
+  "Friends Crackers (MK Groups), Perinayakampalayam, Coimbatore. 81 Sivakasi crackers and combo offers at pre-order prices. Wholesale & retail, bulk orders, delivery available. Order on WhatsApp.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
