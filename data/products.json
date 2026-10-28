@@ -646,5 +646,13 @@
     "variant": "",
     "price": 190,
     "image": "/products/77.jpg"
+  },
+  {
+    "id": 82,
+    "category": "Multicolour Shots",
+    "name": "240 Shot",
+    "variant": "",
+    "price": 4000,
+    "image": "/products/86.jpg"
   }
 ]
