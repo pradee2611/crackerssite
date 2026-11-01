@@ -1,5 +1,5 @@
 import raw from "@/data/products.json";
-import comboData from "@/data/combos.json";
+import giftData from "@/data/gifts.json";
 
 export type Product = {
   id: number;
@@ -49,9 +49,8 @@ export const SITE = {
     "Pre-order prices for 2026. Prices in the shop may vary. Packing charge ₹250.",
 };
 
-export type Combo = { title: string; price: number; free: string; items: { name: string; qty: string }[] };
-export const combos = comboData.combos as Combo[];
-export const giftBoxes = comboData.giftBoxes as number[];
+export type GiftBox = { items: number; price: number };
+export const giftBoxes = giftData.giftBoxes as GiftBox[];
 
 /** Keep related crackers together (Chakkar Big / Special / Deluxe, Match Box Small / Big ...). */
 export function family(name: string): string {

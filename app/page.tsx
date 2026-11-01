@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import Catalogue from "@/components/Catalogue";
-import Combos from "@/components/Combos";
+import GiftBoxes from "@/components/GiftBoxes";
 import { T } from "@/components/LangProvider";
 import { products, categories } from "@/lib/site";
 
@@ -21,7 +21,7 @@ export default function Home() {
             </p>
             <div className="cta">
               <Link className="btn" href="/#shop"><T k="hero.shop" /></Link>
-              <Link className="btn ghost" href="/#combos"><T k="hero.combos" /></Link>
+              <Link className="btn ghost" href="/#gift"><T k="hero.combos" /></Link>
               <a className="btn ghost" href="/price-list.pdf" target="_blank" rel="noopener noreferrer"><T k="hero.download" /></a>
             </div>
             <ul className="trust">
@@ -38,7 +38,7 @@ export default function Home() {
 
       <Catalogue />
 
-      <Combos />
+      <GiftBoxes />
 
 
       <section className="section wrap how">

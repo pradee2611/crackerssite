@@ -21,7 +21,7 @@ export default function Header() {
         </Link>
         <nav className="nav" aria-label={t("nav.aria")}>
           <Link href="/#shop">{t("nav.shop")}</Link>
-          <Link href="/#combos">{t("nav.combos")}</Link>
+          <Link href="/#gift">{t("nav.combos")}</Link>
           <Link href="/price-list">{t("nav.price")}</Link>
           <Link href="/#contact">{t("nav.contact")}</Link>
         </nav>
