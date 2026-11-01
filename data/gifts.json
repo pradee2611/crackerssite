@@ -1,0 +1,16 @@
+{
+  "giftBoxes": [
+    {
+      "items": 16,
+      "price": 300
+    },
+    {
+      "items": 40,
+      "price": 900
+    },
+    {
+      "items": 60,
+      "price": 1200
+    }
+  ]
+}
