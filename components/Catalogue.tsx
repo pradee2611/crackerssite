@@ -81,13 +81,17 @@ export default function Catalogue() {
             return (
               <article className="card" key={p.id}>
                 <div className="pic">
-                  <Image
-                    src={p.image}
-                    alt={`${tr(p.name)} ${tr(p.variant)}`.trim()}
-                    fill
-                    sizes="(max-width: 600px) 50vw, (max-width: 1000px) 33vw, 20vw"
-                    priority={gi === 0 && i < 4}
-                  />
+                  {p.image ? (
+                    <Image
+                      src={p.image}
+                      alt={`${tr(p.name)} ${tr(p.variant)}`.trim()}
+                      fill
+                      sizes="(max-width: 600px) 50vw, (max-width: 1000px) 33vw, 20vw"
+                      priority={gi === 0 && i < 4}
+                    />
+                  ) : (
+                    <span className="nophoto">{t("shop.nophoto")}</span>
+                  )}
                   <span className="no">#{p.id}</span>
                   <span className="off">{t("shop.off", { n: DISCOUNT })}</span>
                 </div>

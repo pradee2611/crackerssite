@@ -67,7 +67,7 @@ export default function CartDrawer() {
           <ul className="lines">
             {lines.map(({ p, qty }) => (
               <li key={p.id}>
-                <Image src={p.image} alt="" width={56} height={56} />
+                {p.image ? <Image src={p.image} alt="" width={56} height={56} /> : <span className="nophoto sm" aria-hidden="true" />}
                 <div className="ln-info">
                   <b>{tr(p.name)}</b>
                   {p.variant && <small>{tr(p.variant)}</small>}
