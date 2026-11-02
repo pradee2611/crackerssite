@@ -9,6 +9,7 @@ export const LANGS: { code: Lang; label: string; name: string }[] = [
 type Dict = Record<string, string>;
 
 const en: Dict = {
+  "shop.nophoto": "Photo coming soon",
   "cust.areas": "Tap your area",
   "cust.district": "District",
   "cust.pin.loading": "Looking up pincode…",
@@ -92,6 +93,7 @@ const en: Dict = {
 };
 
 const ta: Dict = {
+  "shop.nophoto": "படம் விரைவில்",
   "cust.areas": "உங்கள் பகுதியைத் தேர்வு செய்யவும்",
   "cust.district": "மாவட்டம்",
   "cust.pin.loading": "அஞ்சல் குறியீடு தேடப்படுகிறது…",
@@ -175,6 +177,7 @@ const ta: Dict = {
 };
 
 const ml: Dict = {
+  "shop.nophoto": "ഫോട്ടോ ഉടൻ",
   "cust.areas": "നിങ്ങളുടെ പ്രദേശം തിരഞ്ഞെടുക്കുക",
   "cust.district": "ജില്ല",
   "cust.pin.loading": "പിൻകോഡ് പരിശോധിക്കുന്നു…",

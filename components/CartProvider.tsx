@@ -17,7 +17,7 @@ type Ctx = {
 };
 
 const CartCtx = createContext<Ctx | null>(null);
-const KEY = "friends-crackers-cart-v4";
+const KEY = "friends-crackers-cart-v5";
 
 export function CartProvider({ children }: { children: React.ReactNode }) {
   const [cart, setCart] = useState<Cart>({});
