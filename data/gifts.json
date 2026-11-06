@@ -2,15 +2,15 @@
   "giftBoxes": [
     {
       "items": 16,
-      "price": 300
+      "price": 500
     },
     {
-      "items": 40,
-      "price": 900
+      "items": 42,
+      "price": 1200
     },
     {
       "items": 60,
-      "price": 1200
+      "price": 1800
     }
   ]
 }

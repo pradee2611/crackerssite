@@ -460,7 +460,7 @@
     "category": "Other Varieties (Flying)",
     "name": "Pop Throw",
     "variant": "",
-    "price": 20,
+    "price": 15,
     "image": "/products/95.jpg"
   },
   {
@@ -742,5 +742,21 @@
     "variant": "",
     "price": 200,
     "image": "/products/77.jpg"
+  },
+  {
+    "id": 94,
+    "category": "Other Varieties (Flying)",
+    "name": "Bullet",
+    "variant": "",
+    "price": 20,
+    "image": ""
+  },
+  {
+    "id": 95,
+    "category": "Other Varieties (Flying)",
+    "name": "Bathi",
+    "variant": "",
+    "price": 20,
+    "image": ""
   }
 ]
