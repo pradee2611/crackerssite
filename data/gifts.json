@@ -9,8 +9,12 @@
       "price": 900
     },
     {
-      "items": 60,
+      "items": 42,
       "price": 1200
+    },
+    {
+      "items": 60,
+      "price": 1800
     }
   ]
 }
