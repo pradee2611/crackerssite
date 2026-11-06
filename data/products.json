@@ -149,7 +149,7 @@
     "name": "Oola Vedi",
     "variant": "",
     "price": 250,
-    "image": ""
+    "image": "/products/86.jpg"
   },
   {
     "id": 20,
@@ -173,7 +173,7 @@
     "name": "Cylinder Bomb",
     "variant": "",
     "price": 350,
-    "image": ""
+    "image": "/products/87.jpg"
   },
   {
     "id": 23,
@@ -237,7 +237,7 @@
     "name": "Two Sound Rocket",
     "variant": "",
     "price": 170,
-    "image": ""
+    "image": "/products/88.jpg"
   },
   {
     "id": 31,
@@ -349,7 +349,7 @@
     "name": "Star Flash",
     "variant": "",
     "price": 130,
-    "image": ""
+    "image": "/products/89.jpg"
   },
   {
     "id": 45,
@@ -397,7 +397,7 @@
     "name": "Violet Vampire",
     "variant": "",
     "price": 220,
-    "image": ""
+    "image": "/products/90.jpg"
   },
   {
     "id": 51,
@@ -405,7 +405,7 @@
     "name": "Zombie Misfits",
     "variant": "",
     "price": 220,
-    "image": ""
+    "image": "/products/91.jpg"
   },
   {
     "id": 52,
@@ -413,7 +413,7 @@
     "name": "Red Blue",
     "variant": "",
     "price": 220,
-    "image": ""
+    "image": "/products/92.jpg"
   },
   {
     "id": 53,
@@ -421,7 +421,7 @@
     "name": "Stine Blue",
     "variant": "",
     "price": 220,
-    "image": ""
+    "image": "/products/93.jpg"
   },
   {
     "id": 54,
@@ -429,7 +429,7 @@
     "name": "Peacock Feather",
     "variant": "",
     "price": 250,
-    "image": ""
+    "image": "/products/94.jpg"
   },
   {
     "id": 55,
@@ -461,7 +461,7 @@
     "name": "Pop Throw",
     "variant": "",
     "price": 20,
-    "image": ""
+    "image": "/products/95.jpg"
   },
   {
     "id": 59,
@@ -501,7 +501,7 @@
     "name": "Helicopter",
     "variant": "",
     "price": 160,
-    "image": ""
+    "image": "/products/96.jpg"
   },
   {
     "id": 64,
@@ -509,7 +509,7 @@
     "name": "Wonder Throw",
     "variant": "",
     "price": 180,
-    "image": ""
+    "image": "/products/97.jpg"
   },
   {
     "id": 65,
@@ -525,7 +525,7 @@
     "name": "Lolli Pop",
     "variant": "",
     "price": 250,
-    "image": ""
+    "image": "/products/98.jpg"
   },
   {
     "id": 67,
@@ -637,7 +637,7 @@
     "name": "240 Shot",
     "variant": "",
     "price": 4100,
-    "image": ""
+    "image": "/products/99.jpg"
   },
   {
     "id": 81,
