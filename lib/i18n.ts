@@ -9,6 +9,12 @@ export const LANGS: { code: Lang; label: string; name: string }[] = [
 type Dict = Record<string, string>;
 
 const en: Dict = {
+  "closed.title": "We are temporarily closed",
+  "closed.msg": "Our shop is closed until next Diwali. Thank you for your support!",
+  "closed.contact": "For crackers, functions or events, please contact:",
+  "closed.call": "Call now",
+  "closed.wa": "WhatsApp us",
+  "closed.thanks": "Happy to serve you again soon 🎆",
   "shop.nophoto": "Photo coming soon",
   "cust.areas": "Tap your area",
   "cust.district": "District",
@@ -93,6 +99,12 @@ const en: Dict = {
 };
 
 const ta: Dict = {
+  "closed.title": "தற்காலிகமாக மூடப்பட்டுள்ளது",
+  "closed.msg": "அடுத்த தீபாவளி வரை எங்கள் கடை மூடப்பட்டுள்ளது. உங்கள் ஆதரவுக்கு நன்றி!",
+  "closed.contact": "பட்டாசு, விழாக்கள் அல்லது நிகழ்ச்சிகளுக்கு தொடர்பு கொள்ளுங்கள்:",
+  "closed.call": "இப்போதே அழைக்கவும்",
+  "closed.wa": "வாட்ஸ்அப்பில் தொடர்புகொள்ளுங்கள்",
+  "closed.thanks": "விரைவில் மீண்டும் உங்களுக்கு சேவை செய்ய காத்திருக்கிறோம் 🎆",
   "shop.nophoto": "படம் விரைவில்",
   "cust.areas": "உங்கள் பகுதியைத் தேர்வு செய்யவும்",
   "cust.district": "மாவட்டம்",
@@ -177,6 +189,12 @@ const ta: Dict = {
 };
 
 const ml: Dict = {
+  "closed.title": "താൽക്കാലികമായി അടച്ചിരിക്കുന്നു",
+  "closed.msg": "അടുത്ത ദീപാവലി വരെ ഞങ്ങളുടെ കട അടച്ചിരിക്കും. നിങ്ങളുടെ പിന്തുണയ്ക്ക് നന്ദി!",
+  "closed.contact": "പടക്കങ്ങൾ, ചടങ്ങുകൾ അല്ലെങ്കിൽ പരിപാടികൾക്കായി ബന്ധപ്പെടുക:",
+  "closed.call": "ഇപ്പോൾ വിളിക്കൂ",
+  "closed.wa": "വാട്സ്ആപ്പിൽ ബന്ധപ്പെടുക",
+  "closed.thanks": "ഉടൻ വീണ്ടും നിങ്ങളെ സേവിക്കാൻ കാത്തിരിക്കുന്നു 🎆",
   "shop.nophoto": "ഫോട്ടോ ഉടൻ",
   "cust.areas": "നിങ്ങളുടെ പ്രദേശം തിരഞ്ഞെടുക്കുക",
   "cust.district": "ജില്ല",

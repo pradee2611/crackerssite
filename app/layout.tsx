@@ -16,7 +16,8 @@ import { LangProvider } from "@/components/LangProvider";
 import Header from "@/components/Header";
 import CartDrawer from "@/components/CartDrawer";
 import Footer from "@/components/Footer";
-import { LOCATION, SITE, SITE_URL } from "@/lib/site";
+import ClosedPage from "@/components/ClosedPage";
+import { LOCATION, SITE, SITE_CLOSED, SITE_URL } from "@/lib/site";
 
 const TITLE = "Friends Crackers – Sivakasi Crackers in Coimbatore | 2026 Diwali Pre-order";
 const DESC =
@@ -92,14 +93,18 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body>
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
         <LangProvider>
-          <CartProvider>
-            <CustomerProvider>
-              <Header />
-              <main>{children}</main>
-              <Footer />
-              <CartDrawer />
-            </CustomerProvider>
-          </CartProvider>
+          {SITE_CLOSED ? (
+            <ClosedPage />
+          ) : (
+            <CartProvider>
+              <CustomerProvider>
+                <Header />
+                <main>{children}</main>
+                <Footer />
+                <CartDrawer />
+              </CustomerProvider>
+            </CartProvider>
+          )}
         </LangProvider>
       </body>
     </html>

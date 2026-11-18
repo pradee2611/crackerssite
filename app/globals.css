@@ -218,3 +218,20 @@ a { color: inherit; }
 
 .cust-areas { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; margin-top: 6px; }
 .cust-areas span { font-size: 12px; color: #6b4a4a; width: 100%; }
+
+/* temporarily closed page */
+.closed { min-height: 100dvh; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 16px; padding: 20px 16px; background: radial-gradient(ellipse at 50% 0%, var(--red-2), var(--red) 55%, var(--deep)); }
+.closed-lang { align-self: flex-end; }
+.closed-card { width: min(560px, 100%); background: var(--cream); border: 3px solid var(--gold); border-radius: 20px; padding: 28px 22px 24px; text-align: center; box-shadow: 0 18px 44px rgba(0,0,0,.5); }
+.closed-brand { display: flex; align-items: center; justify-content: center; gap: 10px; }
+.closed-brand img { width: 44px; height: 44px; border-radius: 10px; }
+.closed-brand span { font-size: clamp(22px, 6vw, 30px); font-weight: 700; color: var(--red); }
+.closed-brand i { font-style: italic; }
+.closed-brand em { font-style: italic; color: var(--gold-2); }
+.closed-ta { margin: 6px 0 14px; color: var(--deep); font-weight: 600; }
+.closed h1 { margin: 0 0 8px; font-size: clamp(24px, 6vw, 34px); color: var(--red); line-height: 1.2; }
+.closed-msg { margin: 0 0 18px; font-size: 17px; color: var(--ink); }
+.closed-sub { margin: 0 0 6px; color: #6b4a4a; font-size: 15px; }
+.closed-num { display: inline-block; margin-bottom: 16px; font-size: clamp(28px, 8vw, 40px); font-weight: 700; color: var(--red); text-decoration: none; letter-spacing: 1px; }
+.closed-actions { display: flex; gap: 10px; justify-content: center; flex-wrap: wrap; }
+.closed-thanks { margin: 18px 0 0; color: #6b4a4a; font-size: 14px; }

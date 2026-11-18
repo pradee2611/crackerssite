@@ -19,6 +19,12 @@ export const SITE_URL = (process.env.NEXT_PUBLIC_SITE_URL ?? "https://friendscra
 
 export const PACKING_CHARGE = 250;
 
+/**
+ * The shop is closed until next Diwali: every page shows the "temporarily closed" notice and nothing else.
+ * Nothing is deleted. To reopen, set NEXT_PUBLIC_SITE_OPEN=true in the Vercel project (or change this line to false).
+ */
+export const SITE_CLOSED = process.env.NEXT_PUBLIC_SITE_OPEN !== "true";
+
 /** Every item is shown at this % off; the struck-through price is price / (1 - discount), as on the printed price list. */
 export const DISCOUNT = 80;
 export const mrp = (price: number) => Math.round((price * 100) / (100 - DISCOUNT));
